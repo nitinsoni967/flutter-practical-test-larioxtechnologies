@@ -39,6 +39,9 @@ class _MyAppState extends State<MyApp> {
         appBar: AppBar(
           title: const Text('Housing Management'),
           automaticallyImplyLeading: true,
+          leading: BackButton(
+            color: Colors.white,
+          ),
         ),
         body: Center(
           child: screens[myIndex],
