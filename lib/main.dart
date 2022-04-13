@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'dart:math';
 
 void main() {
   runApp(const MyApp());
@@ -45,7 +46,8 @@ class _MyAppState extends State<MyApp> {
         bottomNavigationBar: BottomNavigationBar(
           items: [
             BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
-            BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Community'),
+            BottomNavigationBarItem(
+                icon: Icon(Icons.apartment), label: 'Community'),
             BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Services'),
           ],
           selectedItemColor: Colors.orange,
@@ -138,10 +140,13 @@ class HomeWidget extends StatelessWidget {
                 ),
                 Padding(
                   padding: EdgeInsets.all(8.0),
-                  child: Icon(
-                    Icons.arrow_right_sharp,
-                    size: 30,
-                    color: Colors.grey,
+                  child: RotatedBox(
+                    quarterTurns: 2,
+                    child: Icon(
+                      Icons.arrow_back_ios_new,
+                      size: 30,
+                      color: Colors.grey,
+                    ),
                   ),
                 )
               ],
