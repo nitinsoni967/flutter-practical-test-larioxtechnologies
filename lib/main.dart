@@ -51,7 +51,8 @@ class _MyAppState extends State<MyApp> {
             BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
             BottomNavigationBarItem(
                 icon: Icon(Icons.apartment), label: 'Community'),
-            BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Services'),
+            BottomNavigationBarItem(
+                icon: Icon(Icons.design_services), label: 'Services'),
           ],
           selectedItemColor: Colors.orange,
           currentIndex: myIndex,
